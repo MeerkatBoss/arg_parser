@@ -35,6 +35,8 @@ int parse_args(int argc, const char *const *argv,
 
         argv += parsed;
         total_parsed += parsed;
+        if (tag)
+            ++ total_parsed;
     }
 
     return total_parsed;
